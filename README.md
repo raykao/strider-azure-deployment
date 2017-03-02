@@ -1,1 +1,1 @@
-# Strider CD Azure Resouce Manager Template install
+# Strider CD Azure Deployment
