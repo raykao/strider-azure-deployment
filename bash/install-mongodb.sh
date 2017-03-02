@@ -8,7 +8,7 @@ apt-get update
 apt-get install -y mongodb-org
 
 cd /etc/systemd/system/
-wget https://raw.githubusercontent.com/raykao/strider-azure-deployment/master/mongodb.service
+wget https://raw.githubusercontent.com/raykao/strider-azure-deployment/master/config/mongodb.service
 
 systemctl start mongodb
 
