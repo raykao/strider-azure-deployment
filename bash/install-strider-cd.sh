@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
 # install node
-curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo -i
+
+su strider
+
+cd ~/
+
+source ~/.bash_profile
+
+git clone https://github.com/Strider-CD/strider.git && cd strider
+
+npm install
