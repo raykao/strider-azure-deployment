@@ -3,15 +3,19 @@
 # install node
 sudo -i
 
-su strider
+cd /usr/local/lib
 
-cd ~/
+wget https://nodejs.org/dist/v6.10.0/node-v6.10.0-linux-x64.tar.xz
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+tar -xf $(ls | grep node)
 
-touch .bash_profile
-echo "source ~/.bashrc" >> ~/.bash_profile
+rm *.xz
 
-source ~/.bash_profile
+sudo ln -s "$(pwd)/$(ls | grep node)/bin/node" /usr/bin/node
 
-nvm install 6.10
+sudo ln -s "$(pwd)/$(ls | grep node)/bin/npm" /usr/bin/npm
+
+# used to daemonize node services
+npm install -g pm2
+
+sudo ln -s "$(pwd)/$(ls | grep node)/bin/pm2" /usr/bin/pm2
