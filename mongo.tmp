@@ -1,0 +1,2 @@
+use strider
+db.createUser({user: "strider", pwd: "striderpw", roles: ["dbOwner"]})
