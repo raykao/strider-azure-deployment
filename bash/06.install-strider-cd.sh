@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
 # install node
-su strider<<'EOF'
+su strider
 
 cd ~/
 
 touch test.txt
-
-EOF
