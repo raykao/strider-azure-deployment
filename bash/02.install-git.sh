@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-sudo apt-get update
-sudo apt-get install git-core
+apt-get update
+apt-get install -y git-core

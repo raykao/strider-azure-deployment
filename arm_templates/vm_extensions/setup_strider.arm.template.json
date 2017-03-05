@@ -25,17 +25,11 @@
                 "autoUpgradeMinorVersion": true,
                 "settings": {
                     "fileUris": [
-                        "[concat(variables('gitHubBaseUrl'), '01.create-strider-system-user.sh')]",
-                        "[concat(variables('gitHubBaseUrl'), '02.install-git.sh')]",
-                        "[concat(variables('gitHubBaseUrl'), '03.firewall.sh')]",
-                        "[concat(variables('gitHubBaseUrl'), '04.install-mongodb.sh')]",
-                        "[concat(variables('gitHubBaseUrl'), '05.install-node.sh')]",
-                        "[concat(variables('gitHubBaseUrl'), '06.install-strider-cd.sh')]",
-                        "[concat(variables('gitHubBaseUrl'), '07.daemonize-strider-pm2.sh')]",
+                        "[concat(variables('gitHubBaseUrl'), '01.create-strider-system-user.sh')]"
                     ]
                 },
                 "protectedSettings": {
-                    "commandToExecute": "./01.create-strider-system-user.sh && ./02.install-git.sh && ./03.firewall.sh && ./04.install-mongodb.sh && ./05.install-node.sh && ./06.install-strider-cd.sh && ./07.daemonize-strider-pm2.sh"
+                    "commandToExecute": "./01.create-strider-system-user.sh"
                 }
             }
         }
