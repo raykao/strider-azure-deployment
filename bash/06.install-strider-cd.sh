@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 # install node
+
+touch /tmp/strider-test.txt
+
 su strider<<'EOF'
 
 cd ~/
