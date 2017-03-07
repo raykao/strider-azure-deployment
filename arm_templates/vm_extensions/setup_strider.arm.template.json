@@ -25,7 +25,7 @@
                 "autoUpgradeMinorVersion": true,
                 "settings": {
                     "fileUris": [
-                        "[concat(variables('gitHubBaseUrl'), '00.run.sh')]"
+                        "[concat(variables('gitHubBaseUrl'), '00.run.sh')]",
                         "[concat(variables('gitHubBaseUrl'), '01.create-strider-system-user.sh')]",
                         "[concat(variables('gitHubBaseUrl'), '02.install-git.sh')]",
                         "[concat(variables('gitHubBaseUrl'), '03.firewall.sh')]",
