@@ -1,3 +1,6 @@
 azure vm extension set <resourceGroupName> <VMname> CustomScript Microsoft.Azure.Extensions 2.0 \
   --auto-upgrade-minor-version \
   --public-config '{"fileUris": ["https://raw.githubusercontent.com/raykao/strider-azure-deployment/master/bash/00.run.sh", "https://raw.githubusercontent.com/raykao/strider-azure-deployment/master/bash/01.create-strider-system-user.sh","https://raw.githubusercontent.com/raykao/strider-azure-deployment/master/bash/02.install-git.sh", "https://raw.githubusercontent.com/raykao/strider-azure-deployment/master/bash/03.firewall.sh", "https://raw.githubusercontent.com/raykao/strider-azure-deployment/master/bash/04.install-mongodb.sh", "https://raw.githubusercontent.com/raykao/strider-azure-deployment/master/bash/05.install-node.sh", "https://raw.githubusercontent.com/raykao/strider-azure-deployment/master/bash/06.install-strider.sh", "https://raw.githubusercontent.com/raykao/strider-azure-deployment/master/bash/07.daemonize-strider-pm2.sh"],"commandToExecute": "./00.run.sh"}'
+
+  
+azure group deployment create --resource-group <resourceGroupName> --template-uri "https://raw.githubusercontent.com/raykao/strider-azure-deployment/master/arm_templates/base_deploy.arm.template.json"
