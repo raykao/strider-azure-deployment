@@ -13,5 +13,3 @@ EOF
 sudo env PATH=$PATH:/usr/local/lib/node-v6.10.0-linux-x64/bin pm2 startup systemd -u strider --hp /home/strider
 
 pm2 save
-
-shutdown -r -t now
