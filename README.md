@@ -31,5 +31,9 @@ Replacing ```<resourceGroupName>``` and ```<VMname>``` with the respective resou
 ## Known issues
 
 1. ```arm_templates/base_deploy.arm.template.json``` - it seems that deploying as a single template script results in failure.
-2. ```arm_templates/vm_extensions/setup_strider.arm.template.json``` doesn't complete final steps of daemonizing the process.  It also seems to run into the same issues as #3 below.
+2. ~~```arm_templates/vm_extensions/setup_strider.arm.template.json``` doesn't complete final steps of daemonizing the process.  It also seems to run into the same issues as #3 below.~~ (solved see #1 below)
 3. Running the command works, and completes quickly.  However in terminal/command line, it seems to run forever even thought the process completes behind the scenes.  "Long" running processes appear to not stop automatically...or have to 'timeout' at some point.
+
+## Solved issues
+
+1. Solved in commit [f5824403e660cc24c10012600d47bd0122e3dfd2](https://github.com/raykao/strider-azure-deployment/commit/f5824403e660cc24c10012600d47bd0122e3dfd2)
