@@ -6,6 +6,8 @@ This repo is meant to be an example of how to deploy using multiple methods.
 
 Method one uses the ```deploy.sh``` script to install a working version of Strider CD.
 
+Hello world.
+
 Requirements:
 
 1. Login to Azure-CLI (1.0 being in the examples below)
